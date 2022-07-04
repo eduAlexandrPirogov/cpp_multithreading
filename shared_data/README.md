@@ -25,13 +25,12 @@ Mutexes can lead to the next problems: deadlock and livelock.
 **Deadlock** -- when two too stubborn waiters meet in the doorway.
 **Livelock** -- when two overly polite waiters meet in the doorway.
 
-# When to use mutexes and when to avoid
+# Advices about mutexes
 
 1. don’t lock mutex for any longer than necessary
 2. don’t lock any more data than necessary
 3. don’t make locking too fine-grained
-
-
+-----
 1. make the shared data a member of class
 2. make the mutex a member of a class
 3. make the task function a member function
